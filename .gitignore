@@ -1,4 +1,4 @@
-# Python environments and generated cache files
+# Python environments, caches, and build products
 .venv/
 venv/
 __pycache__/
@@ -13,12 +13,12 @@ build/
 dist/
 *.egg-info/
 
-# Local API keys and configuration (keep a safe example file)
+# Local secrets and configuration
 .env
 .env.*
 !.env.example
 
-# Downloaded datasets and generated data; retain folder markers/docs
+# Large or downloaded data; track examples and documentation separately
 **/data/raw/**
 **/data/processed/**
 **/data/documents/**
@@ -28,16 +28,15 @@ dist/
 !**/data/**/.gitkeep
 !**/data/**/README.md
 
-# Local databases, retrieval indexes, and logs
+# Regenerable local outputs (curated findings belong outside this folder)
+reports/generated/
+*.db
 *.sqlite
 *.sqlite3
-*.db
 .chroma/
 *.log
 
-# Operating system files
+# OS files
 .DS_Store
 Thumbs.db
 desktop.ini
-
-# Keep code, notebooks, SQL, charts, reports, and dashboard files tracked.
