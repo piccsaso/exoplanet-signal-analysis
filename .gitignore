@@ -1,0 +1,43 @@
+# Python environments and generated cache files
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+build/
+dist/
+*.egg-info/
+
+# Local API keys and configuration (keep a safe example file)
+.env
+.env.*
+!.env.example
+
+# Downloaded datasets and generated data; retain folder markers/docs
+**/data/raw/**
+**/data/processed/**
+**/data/documents/**
+!**/data/raw/**/
+!**/data/processed/**/
+!**/data/documents/**/
+!**/data/**/.gitkeep
+!**/data/**/README.md
+
+# Local databases, retrieval indexes, and logs
+*.sqlite
+*.sqlite3
+*.db
+.chroma/
+*.log
+
+# Operating system files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Keep code, notebooks, SQL, charts, reports, and dashboard files tracked.
